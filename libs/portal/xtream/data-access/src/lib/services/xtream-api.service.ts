@@ -327,6 +327,9 @@ export class XtreamApiService {
         limit = 10,
         options?: XtreamRequestOptions
     ): Promise<EpgItem[]> {
+
+        return [];
+        
         const response: EpgResponse = await this.sendRequest(
             credentials.serverUrl,
             {
@@ -354,6 +357,9 @@ export class XtreamApiService {
         streamId: number,
         options?: XtreamRequestOptions
     ): Promise<EpgItem[]> {
+        
+        return [];
+        
         try {
             const response: EpgResponse = await this.sendRequest(
                 credentials.serverUrl,
